@@ -18,6 +18,7 @@ public class MainSinExp {
         String santa = "*<]:-DOo";
         String renos = ">:o)";
         String elfo = "<]:-D";
+        String falsosanta = "<]:-DOo";
 
 
         int contadorS = 0;
@@ -41,8 +42,10 @@ public class MainSinExp {
 
 
             if (l1.indexOf(elfo) != -1){
-                contadorA++;
-                System.out.println("Esclavos:"+contadorA);
+                if (l1.indexOf(falsosanta) == -1){
+                    contadorA++;
+                    System.out.println("Esclavos:"+contadorA);
+                }
             }
 
             l1= br.readLine();
